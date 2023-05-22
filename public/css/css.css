@@ -1,0 +1,562 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('https://raw.githubusercontent.com/Pericena/happybirthday.github.io/main/descarga.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('descarga.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+    /* background: linear-gradient(to bottom, #1a5276, #2980b9, #7fb3d5); */
+    /* background-image: linear-gradient(to bottom, rgba(26, 82, 118, 0.8), rgba(41, 128, 185, 0.8),rgba(127, 179, 213, 0.8)), 
+    url('https://github.com/Pericena/happybirthday.github.io/blob/main/descarga.png'); */
+  /* margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #171e35, #1a5276), url('https://raw.githubusercontent.com/Pericena/happybirthday.github.io/main/img.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+  
+  .container {
+      width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #buscador {
+  
+    
+    overflow: auto;
+    padding: 1em;
+    border-radius: 2px;
+    text-align: center;
+  }
+  
+  #buscador #capatext {
+    display: inline-block;
+    margin-top: 0px;
+  }
+  
+  #buscador #capatext input {
+    height: 35px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 14px;
+    border: none;
+    box-shadow: inset 2px 2px 2px #283048;
+    width: 240px;
+    color:#3C486B;
+   
+  
+  }
+  
+  #buscador button {
+    width: 80px;
+    height: 37px;
+    font-size: 14px;
+    border-radius: 0px 5px 5px 0px;
+    background: #1e245a;
+    color:#ffffff;
+    border: none;
+    margin-left: -4px;
+    cursor: pointer;
+  
+  }
+  h1{
+      color:#ffffff;
+      font-size: 16px;
+    text-align: center;
+  }
+  h2{
+      color:#ffffff;
+      font-size: 12px;
+    text-align: center;
+  }
+  #estudiante {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('https://raw.githubusercontent.com/Pericena/happybirthday.github.io/main/descarga2.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('descarga2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 300px;
+    margin: 8px 0;
+    font-size: 14px;
+    text-align: justify;
+      z-index: 1;
+  }
+  
+  /* Estilos para pantallas de hasta 600px de ancho */
+  @media (max-width: 400px) {
+    #estudiante {
+      width: 85%;
+    }
+  }
+  /* Estilos para pantallas de hasta 600px de ancho */
+  @media (max-width: 350px) {
+    #estudiante {
+      width: 80%;
+    }
+  }
+  
+    
+  .token-input {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* background-color: #080913; */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 9, 17, 0.8)), 
+    url('https://raw.githubusercontent.com/Pericena/happybirthday.github.io/main/descarga2.png');
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .token-input input,
+    .token-input button {
+      margin-bottom: 8px;
+      width:auto;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    color:#1e245a;
+    
+  
+    }
+  
+  
+    .token-input button {
+    margin-bottom: 8px;
+    width:80px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #1e245a;
+    color:#ffffff;
+    border: none;
+    margin-left: -4px;
+    cursor: pointer;
+  
+    }
+  
+    .token-input.hidden {
+      display: none;
+   
+    }
+  
+    .mensaje {
+      
+      margin-top: 2px;
+      padding: 2px;
+      color: #1e245a;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+   #lista-datos2 {
+      display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    #lista-datos2 li {
+      list-style-type: none;
+      height: 5px;
+    border-radius: 0px;
+    font-size: 14px;
+    border: none;
+    box-shadow: inset 4px 4px 4px #283048;
+  
+    width: auto;
+    color:#ffffff;
+    /* background-color: #ffffff; */
+    padding: 10px;
+    
+    } 
+  
+  
+    @media (max-width: 600px) {
+    #lista-datos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #lista-datos {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 380px) {
+    #lista-datos {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  
+    /* width: auto; */
+  }
+  
+  .carousel-container {
+      
+      list-style-type: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-item {
+      list-style-type: none;
+      transition: transform 0.3s ease-in-out;
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item {
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-item {
+      flex: 0 0 100%;
+    }
+  }
+  .carousel-prev,
+  .carousel-next {
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    opacity: 1;
+  }
+  
+  #lista-datos {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  #lista-datos li {
+      transition: transform 0.3s ease-in-out;
+      /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), 
+    url('https://github.com/Pericena/happybirthday.github.io/blob/main/https://github.com/Pericena/happybirthday.github.io/blob/main/descarga.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
+    padding: 10px;
+    color: #1e245a;
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    margin: 8px 0;
+    font-size: 14px;
+    text-align: justify;
+    flex-shrink: 0;
+    margin-right: 10px;
+  
+  }
+  
+  
+  
+    #datos {
+      background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
+    padding: 10px;
+    border-color: #1e245a;
+    color: #1e245a;
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    margin: 8px 0;
+    font-size: 14px;
+    text-align: justify;
+      z-index: 1;
+  
+      }
+      #datos p {
+        margin-bottom: 5px;
+      }
+  
+      #loading-container {
+        display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: #080913;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      }
+  
+  
+      .app{
+      color: rgb(255, 255, 255);
+      font-size: 40px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .splash{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      min-height: 600px;
+    }
+    .splash .ring{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      animation: ring 2s linear infinite;
+    }
+    @keyframes ring {
+      0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+      }
+      50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+      }
+      100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+      }
+    }
+    .splash .ring:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 5px rgba(255,255,255,.3);
+    }
+    .splash span{
+      color: #737373;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 200px;
+      animation: text 1s ease-in-out infinite;
+    }
+    @keyframes text {
+      50%{
+        color: black;
+      }
+    }
+  
+  
+  .custom-image-class {
+      max-width: 150px;
+      max-height: 150px; 
+      }
+  
+  
+      .section.category {
+    text-align: center;
+  
+  }
+  
+  .section.category2 {
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .has-scrollbar {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    scrollbar-width: thin;
+    scrollbar-color: #1e245a #f7f7f7;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #1e245a;
+    border-radius: 10px;
+  }
+  
+  .has-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #1e245a;
+  }
+  
+  .scrollbar-item {
+    flex: 0 0 auto;
+    width: 330px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+  }
+  .scrollbar-item .card-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .category-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-banner {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+  }
+  
+  .card-banner .img-holder {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card-title {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .card-title:hover {
+    color: #1e245a;
+  }
+  
+  @media (max-width: 767px) {
+    .has-scrollbar {
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #ccc #f7f7f7;
+    }
+  }
+  
+  
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-items li {
+    margin-right: 20px;
+  }
+  
+  .menu-items li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+  
+    .menu-items li {
+      margin: 10px 0;
+    }
+  
+    #menu-toggle:checked ~ .menu-items {
+      display: flex;
+    }
+  }
+  
+  
